@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Kill Baidu-Recommend",
+  "description": "This extension will kill the recommends on Baidu-Search page.",
+  "version": "1.0",
+
+  "content_scripts":[
+    {
+      "matches": ["http://www.baidu.com/*"],
+      "js" : ["jquery.min.js","kill_baidu_recommend.js"]
+    }
+  ]
+}
